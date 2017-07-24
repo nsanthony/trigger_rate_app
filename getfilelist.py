@@ -4,6 +4,9 @@ from time import gmtime, strftime
 from datetime import date, timedelta, datetime
 
 
+#directories:
+makeroot_path = '/home/creamop/L0data/'
+
 def getfilelist(start=None,end=None,path=None,last=None,move_back=None):
     multi_day = 0
     if move_back == None:
@@ -47,7 +50,8 @@ def getfilelist(start=None,end=None,path=None,last=None,move_back=None):
             last = 1
         
     if path == None:
-        L0_directory= '/home/nsanthony/cream_lab/L0data'
+	global makeroot_path
+        L0_directory= makeroot_path
     
     #This is a bash file that finds all the files in the desired date
     os.chdir(L0_directory)
