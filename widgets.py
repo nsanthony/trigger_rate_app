@@ -1,4 +1,4 @@
-#! /home/nsanthony/anaconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
 
 from PyQt5.QtWidgets import (QWidget , QPushButton, QFileDialog, QComboBox)
 from PyQt5.QtCore import QSize

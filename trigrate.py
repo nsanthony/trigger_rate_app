@@ -1,17 +1,18 @@
-#! /home/nsanthony/anaconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
 import numpy as np
 import os
 
+app_path = '/home/creamop/trigger_rate_app'
 
 def trigrate_chip(tree=None,files=None):
+    global app_path
     if files == None:
         minutes = 10
     else:
         minutes = 10*files
     chips = 40
     events = len(tree)
-    path = '/home/nsanthony/cream_lab/trigger_rate'
-    os.chdir(path)
+    os.chdir(app_path)
     active_chip = np.zeros([chips,2])
     chip_list = np.linspace(1,40,num=40)
     active_chip[:,0] = chip_list #increases if the chip is active in the event
@@ -36,12 +37,12 @@ def trigrate_chip(tree=None,files=None):
     
     
 def trigrate_channel(tree=None,chip=None,files=None):
+    global app_path
     if files == None:
         minutes = 10
     else:
         minutes = 10*files
-    path = '/home/nsanthony/cream_lab/trigger_rate'
-    os.chdir(path)
+    os.chdir(app_path)
     channels = np.loadtxt('channel_list.txt',dtype=int)
     start_channel = channels[chip-1,0]
     end_channel = channels[chip-1,63]

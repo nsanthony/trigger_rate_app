@@ -1,4 +1,4 @@
-#! /home/nsanthony/anaconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
 
 from get_tree import get_tree
 import numpy as np

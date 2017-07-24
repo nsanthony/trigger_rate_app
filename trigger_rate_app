@@ -1,5 +1,5 @@
 #! /usr/bin/python
-##! /home/creamop/miniconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
 
 import sys
 #import numpy as np

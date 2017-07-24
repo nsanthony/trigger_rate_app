@@ -1,4 +1,5 @@
-#! /home/nsanthony/anaconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
+
 import os
 from time import gmtime, strftime
 from datetime import date, timedelta, datetime

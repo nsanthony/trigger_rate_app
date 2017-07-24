@@ -1,4 +1,4 @@
-#! /home/nsanthony/anaconda3/bin/python
+#! /home/creamop/miniconda3/bin/python
 
 #import sys
 #import numpy as np
@@ -8,7 +8,7 @@ from root_numpy import tree2array
 import os
 
 def get_tree(file_list=None):
-    data_path = '/home/nsanthony/cream/data/dat/trigger_rate_data'
+    data_path = '/home/creamop/trigger_rate_app/data_temp'
     os.chdir(data_path)
     part= file_list.partition('cdps2/cream/')
     current_file = part[2][len(part[2])-20:len(part[2])-5] + '.root'
