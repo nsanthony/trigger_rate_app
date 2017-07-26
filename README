@@ -18,6 +18,7 @@ These are notes when I installed ROOT and got root-numpy to work on anaconda wit
 
 
 -root_scripts needs to be put in the L0data directory
+-new root files put in the data_root directory located in the trigger_rate_app directory
 
 Module List:
 PyQt5
