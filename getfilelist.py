@@ -64,7 +64,7 @@ def getfilelist(start=None,end=None,path=None,last=None,move_back=None):
             d_s = int(day)
             d_e = int(day_end)
             for i in range((d_s+1),(d_e+1)):
-                os.system('./makelist %s %s %s 0'%(year,month,i))
+                os.system('./makelist_trigger_rate_app %s %s %s 0'%(year,month,i))
     #opens the LIST file that was just created
     cream_dir = L0_directory + '/cream'
     os.chdir(cream_dir)
