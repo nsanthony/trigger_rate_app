@@ -1,0 +1,33 @@
+#! /bin/bash 
+
+
+YEAR=$1
+#echo $YEAR
+
+MONTH=$2
+#echo $MONTH
+
+DAY=$3
+#echo $DAY
+
+APPEND=$4
+
+if [ $APPEND = 1 ]
+then
+#echo new_LIST
+source env.sh
+export CRMROOT=`pwd`
+./list_override
+cd cream
+ls 2>/dev/null ~/cream/data/cdps2/cream/$YEAR/$MONTH/$DAY/*dat >> LIST
+fi
+
+if [ $APPEND = 0 ]
+then 
+#echo adding_to_LIST
+source env.sh
+export CRMROOT=`pwd`
+cd cream
+
+ls 2>/dev/null ~/cream/data/cdps2/cream/$YEAR/$MONTH/$DAY/*dat >> LIST
+fi

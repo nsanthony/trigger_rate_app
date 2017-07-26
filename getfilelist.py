@@ -56,7 +56,7 @@ def getfilelist(start=None,end=None,path=None,last=None,move_back=None):
     
     #This is a bash file that finds all the files in the desired date
     os.chdir(L0_directory)
-    os.system('./makelist %s %s %s 1'%(year,month,day))
+    os.system('./makelist_trigger_rate_app %s %s %s 1'%(year,month,day))
     
     #This adds any extra days to the file list
     if multi_day == 1:
