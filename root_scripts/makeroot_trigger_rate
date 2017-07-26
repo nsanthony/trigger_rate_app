@@ -1,0 +1,35 @@
+#! /bin/bash 
+
+
+#YEAR=$1
+#echo $YEAR
+
+#MONTH=$2
+#echo $MONTH
+
+#DAY=$3
+#echo $DAY
+
+##if [ -z "$4" ]
+##then
+##else
+##	TIME=$4
+##	echo $TIME
+##fi
+
+
+
+#source env.sh
+#export CRMROOT=`pwd`
+cd cream
+
+#ls ~/cream/data/cdps2/cream/$YEAR/$MONTH/$DAY/*dat > LIST
+ ./adc
+
+#rm -r ~/anaconda3/lib/python3.6/site-packages/root_numpy/testdata/cream_data/*root
+#mv ROOT/*root ~/anaconda3/lib/python3.6/site-packages/root_numpy/testdata/cream_data
+
+rm -r ~/cream/data/dat/trigger_rate_data/*root
+mv ROOT/*root ~/cream/data/dat/trigger_rate_data
+ 
+# cp /data/cdps2/cream/$YEAR/$MONTH/$DAY/*log /data/cdps2/cream/$YEAR/$MONTH/$DAY/*hk /data/cdps2/cream/$YEAR/$MONTH/$DAY/*pds /data/cdps2/cream/$YEAR/$MONTH/$DAY/*spi* /data/cdps2/cream/$YEAR/$MONTH/$DAY/*gtb /data/cdps2/cream/$YEAR/$MONTH/$DAY/*tgn /data/cdps2/cream/$YEAR/$MONTH/$DAY/*bsd.led /data/cdps2/cream/$YEAR/$MONTH/$DAY/*phs /data/dat/$YEAR/$MONTH/$DAY
