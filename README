@@ -17,7 +17,7 @@ These are notes when I installed ROOT and got root-numpy to work on anaconda wit
 -GUI built using PyQT5
 
 
--root_scripts needs to be put in the L0data directory or 
+-root_scripts needs to be put in the L0data directory
 
 Module List:
 PyQt5
