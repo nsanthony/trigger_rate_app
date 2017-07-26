@@ -1,5 +1,6 @@
 These are notes when I installed ROOT and got root-numpy to work on anaconda with Ubuntu 16.04:
 
+- Used miniconda3 to run the python necessary and conda install and pip install to get modules
 - Needed to conda install libgcc
 
 - Needed to have ROOT make with this command after you make /urs/local/root directory and build it in a seperate directory from both the source and destination (this includes python dependancy):
