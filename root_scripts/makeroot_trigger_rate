@@ -29,7 +29,7 @@ cd cream
 #rm -r ~/anaconda3/lib/python3.6/site-packages/root_numpy/testdata/cream_data/*root
 #mv ROOT/*root ~/anaconda3/lib/python3.6/site-packages/root_numpy/testdata/cream_data
 
-rm -r ~/cream/data/dat/trigger_rate_data/*root
-mv ROOT/*root ~/cream/data/dat/trigger_rate_data
+rm -r ~/trigger_rate_app/data_root/*root
+mv ROOT/*root ~/trigger_rate_app/data_root
  
 # cp /data/cdps2/cream/$YEAR/$MONTH/$DAY/*log /data/cdps2/cream/$YEAR/$MONTH/$DAY/*hk /data/cdps2/cream/$YEAR/$MONTH/$DAY/*pds /data/cdps2/cream/$YEAR/$MONTH/$DAY/*spi* /data/cdps2/cream/$YEAR/$MONTH/$DAY/*gtb /data/cdps2/cream/$YEAR/$MONTH/$DAY/*tgn /data/cdps2/cream/$YEAR/$MONTH/$DAY/*bsd.led /data/cdps2/cream/$YEAR/$MONTH/$DAY/*phs /data/dat/$YEAR/$MONTH/$DAY
